@@ -92,17 +92,6 @@ class ZipadorTest():
             return -1
         return 0
 
-def get_latest_file(path, *paths):
-    """Returns the name of the latest (most recent) file 
-    of the joined path(s)"""
-    fullpath = os.path.join(path, *paths)
-    list_of_files = glob.glob(fullpath)  # You may use iglob in Python3
-    if not list_of_files:                # I prefer using the negation
-        return None                      # because it behaves like a shortcut
-    latest_file = max(list_of_files, key=os.path.getctime)
-    _, filename = os.path.split(latest_file)
-    return filename
-
 def printcolored(foreground, text):
     print(foreground + text)
     print(Style.RESET_ALL, end='')
