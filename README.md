@@ -32,4 +32,6 @@ zezinho@linux$ ./zipador.sh relatorio.pdf KT-213_Lab3
 
 Para executar os testes, foi criado um script de python (`main.py`) para criar os arquivos e enviá-los para seu script.
 
-Se você quiser testar por conta própria, basta ter python 3 e git instalado em seu linux, e rodar `make run` após clonar este repositório. Para limpar os arquivos e pastas criados no diretório, faça `make clean`.
+Se você quiser testar por conta própria, basta ter python 3 e git instalado em seu linux, e rodar `make run` após clonar este repositório. Seu arquivo `zipador.sh` deve ser copiado para o seu repositório local.
+
+Para limpar os arquivos e pastas criados no diretório, faça `make clean`.
